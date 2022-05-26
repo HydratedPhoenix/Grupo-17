@@ -1,0 +1,55 @@
+DECVAR
+var3 ;var9 : float
+var4;var6;var7 : integer
+a;b;c;e;f;d;z : integer
+ENDDEC
+
+-/OPERACIONES ARITMETICAS/-
+write "Ingrese Variable b:";
+read b;
+a:10;
+z: a+3*2-8/(2+2)+b;
+write z;
+
+var9 : 0.99 + 2.58 * 49.;
+write var9;
+
+write "fin operaciones";
+
+if(a == 8 OR b > 5)
+{   
+    write "Ciclo while";
+    while(a > 0 AND b > 0)
+    {
+        a : a - 2;
+        b : b - 2;
+        write a;
+    }
+    write "fin Ciclo while";
+}
+else
+{   
+    write "Inlist";
+    write "Ingrese Variable Var4:";
+    read var4;
+    if(inlist(var4;[2*b+7 ; 12 ; (34+d)*a+b ; 48]))
+    {
+        write "encontro var4";
+    }
+    else
+    {
+        write "no encontro var4";
+    }
+}
+-/DESICIONES CICLOS TEMAS ESPECIALES ANIDAMIENTOS/-
+write "If negado";
+write "Ingrese Variable e:";
+read e;
+if(NOT e > 5)
+{
+    write "e es mayor a 5";
+}
+else
+{
+    write "e no es mayor a 5";
+}
